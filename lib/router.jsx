@@ -24,3 +24,13 @@ FlowRouter.route('/new-ninja', { // Create a new route in Flow Router
     });
   }
 });
+
+FlowRouter.route('/ninjas', {
+  name: 'NinjasList',
+  action() {
+    ReactLayout.render(App, {
+      content: <NinjasList />,
+      nav: <Nav />
+    });
+  }
+});
