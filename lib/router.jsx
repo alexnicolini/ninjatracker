@@ -14,3 +14,13 @@ FlowRouter.route('/request', { // Create a new route in Flow Router
     ReactLayout.render(RequestForm);
   }
 });
+
+FlowRouter.route('/new-ninja', { // Create a new route in Flow Router
+  name: 'NewNinja',
+  action() {
+    ReactLayout.render(App, {
+      content: <NewNinja />,
+      nav: <Nav />
+    });
+  }
+});
