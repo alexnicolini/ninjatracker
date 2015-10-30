@@ -7,3 +7,10 @@ FlowRouter.route('/', { // Create a new route in Flow Router
     });
   }
 });
+
+FlowRouter.route('/request', { // Create a new route in Flow Router
+  name: 'RequestForm',
+  action() {
+    ReactLayout.render(RequestForm);
+  }
+});
